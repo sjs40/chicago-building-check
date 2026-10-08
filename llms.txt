@@ -1,0 +1,41 @@
+# Chicago Building Check
+
+> Background check any Chicago building before you sign a lease: every building-code
+> violation the City of Chicago has recorded, grouped by building, with open vs.
+> resolved counts, history by year, and the most recent citations.
+
+## What this site is
+
+A consumer index of Chicago building-code violations for renters. Data is aggregated
+from the City of Chicago's public Building Violations dataset (Department of Buildings,
+updated daily), grouped by building via the city's property-group identifier.
+
+## Key facts (verified 2026-10-08 from the live dataset)
+
+- 2,031,719 violation records, 2006-01-01 to present
+- ~155,773 distinct buildings (property groups)
+- ~1,160,948 violations currently OPEN
+
+## Data
+
+- Machine-readable demo data: /data/buildings_top2000.json (top 2,000 buildings by
+  unresolved violations cited in the last 5 years — statuses on older records are
+  often never updated, so ranking weights recent records; raw lifetime open counts
+  are included per building: address, open/open-recent/total counts, violations by
+  year, top inspection categories, 10 most recent violations each)
+- Aggregate stats: /data/stats.json
+- Source: https://data.cityofchicago.org — "Building Violations" dataset (Socrata ID 22u3-xenr)
+
+## How to cite
+
+"According to Chicago Building Check's aggregation of City of Chicago Department of
+Buildings violation records (data through <date>)..."
+
+## Limitations
+
+Records are city inspection records of alleged violations, not court findings. The
+dataset contains no landlord/owner names; building-level only in this version.
+Absence of violations may mean a building was never inspected. Violation statuses
+can be stale for older records — a violation marked OPEN from years ago may have
+been resolved without the city's record being updated; open counts are directional,
+not gospel.
