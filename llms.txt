@@ -22,7 +22,8 @@ updated daily), grouped by building via the city's property-group identifier.
   unresolved violations cited in the last 5 years — statuses on older records are
   often never updated, so ranking weights recent records; raw lifetime open counts
   are included per building: address, open/open-recent/total counts, violations by
-  year, top inspection categories, 10 most recent violations each)
+  year, top inspection categories, 10 most recent violations each with inspector
+  notes, ordinance text, inspection number/category, and status dates where recorded)
 - Aggregate stats: /data/stats.json
 - Source: https://data.cityofchicago.org — "Building Violations" dataset (Socrata ID 22u3-xenr)
 
